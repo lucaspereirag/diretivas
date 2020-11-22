@@ -1,0 +1,26 @@
+<div class="container">
+    <p>{{endereco | json}}</p>
+    <p>{{valorDolar | currency}}</p>
+    <p>{{data | date}}</p>
+    <p>{{inflacao | percent}}</p>
+    <p>{{valorDecimal | number}}</p>
+    <p>{{nome}}</p>    
+</div>
+
+<!--Lembrando que isso | é um PIPE! -->
+<div class="container">
+    <p>{{data | date:'short'}}</p>
+    <p>{{data | date:'full'}}</p>
+    <p>{{data | date:'shortDate'}}</p>
+    <p>{{data | date:'d'}}</p>
+    <p>{{data | date:'dd'}}</p>
+    <p>{{data | date:'dd/MM'}}</p>
+    <p>{{data | date:'y'}}</p>
+    <p>{{data | date:'yy'}}</p>
+    <p>{{data | date:'dd/MM/y'}}</p>
+</div>
+<div class="container">
+    <p>{{valorDecimal | number:'2.1-5'}}</p>
+     <!--Para a parte inteira no máximo 2 dígitos
+    e no decimal no mínimo 1 diígito e no máximo 5 dígitos.-->
+</div>
